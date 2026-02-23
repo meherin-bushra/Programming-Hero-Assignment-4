@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="dashboard">
+      <h1>Job Application Tracker</h1>
+      <div class="stats">
+        <div class="stat-card">Total: <span id="count-all">8</span></div>
+        <div class="stat-card">Interview: <span id="count-interview">0</span></div>
+        <div class="stat-card">Rejected: <span id="count-rejected">0</span></div>
+      </div>
+    </header>
+
+    <section class="tracker-section">
+    
+      <section class="jobs-section">
+        <div class="jobs-header">
+          <h2>Available Jobs</h2>
+          <span id="jobs-count">8 Jobs</span>
+        </div>
+
+        <div class="tabs">
+          <button class="tab active" data-tab="all">All</button>
+          <button class="tab" data-tab="interview">Interview</button>
+          <button class="tab" data-tab="rejected">Rejected</button>
+        </div>
+
+        <div id="jobs-container" class="jobs-container">
+     
+        </div>
+
+        <div id="empty-state" class="empty-state hidden">
+          <img src="/B13-A4-PH-Job-Tracker/jobs.png" alt="No jobs" class="empty-image">
+          <p>No jobs available. Check back later.</p>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
